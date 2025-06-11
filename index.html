@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngô Đức Dũng - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background: url('hero-video-placeholder.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header h2 { font-size: 1.5rem; font-weight: 300; color: #bbb; }
+    header p { font-style: italic; margin-top: 10px; }
+    .cta { margin-top: 20px; }
+    .cta a {
+      background: #e63946;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background-color: #1a1a1a;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills li {
+      background: #333;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #111;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 10px 20px;
+      background: #e63946;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ngô Đức Dũng</h1>
+    <h2>Video Editor & Motion Designer</h2>
+    <p>"Mang chuyển động vào từng khung hình"</p>
+    <div class="cta">
+      <a href="#portfolio">Xem Portfolio</a>
+      <a href="#contact">Liên hệ</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Giới thiệu</h2>
+    <p>Tôi là Đức Dũng – một Video Editor với 3 năm kinh nghiệm trong lĩnh vực hậu kỳ video, motion design và sáng tạo nội dung. Với tư duy thiết kế gọn gàng, khả năng xử lý kỹ thuật tốt và tinh thần học hỏi liên tục, tôi luôn nỗ lực để mỗi sản phẩm là một trải nghiệm đáng nhớ.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="project">
+        <h3>Dự án 1</h3>
+        <p>Mô tả ngắn về dự án, có thể là motion graphics hoặc video quảng cáo.</p>
+      </div>
+      <div class="project">
+        <h3>Dự án 2</h3>
+        <p>Mô tả ngắn về dự án, có thể là chỉnh sửa vlog hoặc video âm nhạc.</p>
+      </div>
+      <div class="project">
+        <h3>Dự án 3</h3>
+        <p>Mô tả ngắn về dự án, có thể là animation intro cho startup.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Kỹ năng</h2>
+    <ul>
+      <li>Adobe Premiere</li>
+      <li>After Effects</li>
+      <li>Photoshop</li>
+      <li>Motion Design</li>
+      <li>Color Grading</li>
+      <li>Storyboarding</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <h2>Liên hệ</h2>
+    <p>Email: dunghbj2001@gmail.com</p>
+    <form>
+      <input type="text" placeholder="Tên của bạn">
+      <input type="email" placeholder="Email">
+      <textarea rows="4" placeholder="Lời nhắn..."></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+  </footer>
+</body>
+</html>
